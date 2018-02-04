@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">éditeur de sms</string>
+    <string name="help_msg">» Type ou choisissez un numéro de liste de contacts&lt;br&gt;&lt;br&gt;» Cliquez sur le bouton Charger pour charger message&lt;br&gt;&lt;br&gt;» Cliquez message pour modifier</string>
+    <string name="about_msg" formatted="false">S\'il vous plaît utiliser cet outil avec votre propre responsabilité&lt;br&gt;&lt;br&gt;© 2014 Ray Y &lt;br&gt;&lt;br&gt;</string>
+
+    <string name="contact">Contact</string>
+    <string name="btn_load">Charger</string>
+    <string name="from">D \'envoi</string>
+    <string name="to">D \'envoi</string>
+    <string name="body">Rediger message</string>
+    <string name="date">Date</string>
+    <string name="save">Sauver</string>
+
+    <string name="num_hint">Numéro de téléphone</string>
+    <string name="choose">Choisir le numéro</string>
+
+    <string name="help">Aide</string>
+    <string name="about">A propos</string>
+
+    <string name="btn_save">Sauver</string>
+    <string name="save_msg">Sauver succès</string>
+    <string name="loading">Rediger message...</string>
+    <string name="loading_empty">aucun message</string>
+    <string name="edit_message_diag_title">éditer</string>
+
+    <string name="diag_set_default_sms">Alerte</string>
+    <string name="msg_set_default_sms">Pour faire Éditeur de sms de travailler sur dernière version Android, vous devez définir comme application SMS par défaut, ce n\'est que temporaire, plus tard, il reviendra à précédente de l\'application SMS par défaut, cliquez sur "Ok" pour continuer</string>
+    <string name="msg_revert_default_sms">Avant la sortie, cette action revient à défaut SMS App, cliquez sur "Ok" pour continuer</string>
+    <string name="no_show_again">Ne pas montrer de nouveau</string>
+    <string name="ok">ok</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/tbl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:stretchColumns="0">
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/from"
+                android:layout_width="0dp"
+                android:hint="@string/num_hint"
+                android:scrollHorizontally="true" />
+            <!--<Button-->
+                <!--android:id="@+id/pick_c"-->
+                <!--android:text="@string/btn_contact"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_toRightOf="@id/from"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp" /> -->
+            <ImageButton
+                android:id="@+id/pick_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/from"
+                android:background="@drawable/contact_selector"
+                android:gravity="center" />
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/pick_m"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbl"
+        android:text="@string/btn_load" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick_m"
+        android:padding="5dp"
+        android:scrollbars="horizontal" />
+
+
+
+</RelativeLayout>

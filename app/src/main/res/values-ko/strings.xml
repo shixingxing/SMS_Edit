@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">메시지 편집자</string>
+    <string name="help_msg">» 전화 번호를 입력하거나 주소록에서 선택&lt;br&gt;&lt;br&gt;» 버튼을로드 메시지를로드 클릭하십시오&lt;br&gt;&lt;br&gt;» 클릭 메시지 편집</string>
+    <string name="about_msg" formatted="false">고객님의 책임이 도구를 사용&lt;br&gt;&lt;br&gt;© 2014 Ray Y &lt;br&gt;</string>
+
+    <string name="contact">주소록</string>
+    <string name="btn_load">로드 메시지</string>
+    <string name="from">수신</string>
+    <string name="to">수신</string>
+    <string name="body">메시지를 작성</string>
+    <string name="date">날짜</string>
+    <string name="save">저장</string>
+
+    <string name="num_hint">전화</string>
+    <string name="choose">번호 선택</string>
+
+    <string name="help">도움말</string>
+    <string name="about">소개</string>
+
+    <string name="btn_save">저장</string>
+    <string name="save_msg">성공적으로 저장</string>
+    <string name="loading">로드 메시지..</string>
+    <string name="loading_empty">정보 없음</string>
+    <string name="edit_message_diag_title">수정</string>
+
+    <string name="diag_set_default_sms">경고</string>
+    <string name="msg_set_default_sms">메시지 편집자 는 최신 안드로이드 버전에서 작동하기 위해서는, 당신은 기본 SMS 응용 프로그램으로 설정해야합니다; 이 임시, 나중에는 이전의 기본 SMS 응용 프로그램으로 돌아갑니다 계속하려면 "확인"을 클릭합니다</string>
+    <string name="msg_revert_default_sms">이 작업은 SMS 앱을 기본으로 되돌아갑니다 계속하려면 "확인"을 클릭합니다</string>
+    <string name="no_show_again">다시 표시하지 않음</string>
+    <string name="ok">ok</string>
+</resources>

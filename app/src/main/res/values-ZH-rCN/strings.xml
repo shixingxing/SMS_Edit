@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">短信编辑器</string>
+    <string name="help_msg">» 输入对方号码或者从联系人中选取&lt;br&gt;&lt;br&gt;» 点击载入短信按纽载入此号码相应的短信&lt;br&gt;&lt;br&gt;» 点击短信进入编辑</string>
+    <string name="about_msg" formatted="false">作者将免责使用此软件造成的一切后果&lt;br&gt;&lt;br&gt;© 2014 Ray Y &lt;br&gt;&lt;br&gt;&lt;a
+		href="market://details?id=com.rayy.android.editad"&gt;评价&lt;/a&gt; | &lt;a href="market://search?q=pub:%22Ray%20Y%22&gt;更多軟件 &lt;/a&gt;</string>
+
+    <string name="contact">联系人</string>
+    <string name="btn_load">载入短信</string>
+    <string name="from">來自</string>
+    <string name="to">发送</string>
+    <string name="body">內容</string>
+    <string name="date">日期</string>
+    <string name="save">保存</string>
+
+    <string name="num_hint">电话号码</string>
+    <string name="choose">选择号码</string>
+
+    <string name="help">帮助</string>
+    <string name="about">关于</string>
+
+    <string name="btn_save">保存</string>
+    <string name="save_msg">保存成功</string>
+    <string name="loading">载入中..</string>
+    <string name="loading_empty">没有此号码对应的信息</string>
+    <string name="edit_message_diag_title">修改信息</string>
+
+    <string name="diag_set_default_sms">警告</string>
+    <string name="msg_set_default_sms">由于最新版安卓系统对短信应用做了更严格的研制，您需要暂时设置本应用为默认短信应用，稍后会恢复之前的默认应用，点击确定继续</string>
+    <string name="msg_revert_default_sms">此操作将恢复之前默认的短信应用，点击“确定”继续</string>
+    <string name="no_show_again">不再提示</string>
+    <string name="ok">ok</string>
+</resources>

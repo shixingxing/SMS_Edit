@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">簡訊編輯器</string>
+    <string name="help_msg">» 輸入對方號碼或者從聯繫人中選取&lt;br&gt;&lt;br&gt;» 點擊“載入簡訊”按鈕載入此號碼相應的簡訊&lt;br&gt;&lt;br&gt;» 點擊簡訊進入編輯</string>
+    <string name="about_msg" formatted="false">作者將免責使用此軟件造成的一切後果&lt;br&gt;&lt;br&gt;© 2014 Ray Y &lt;br&gt;&lt;br&gt;&lt;a
+		href="market://details?id=com.rayy.android.editad"&gt;評價&lt;/a&gt; | &lt;a href="market://search?q=pub:%22Ray%20Y%22&gt;更多軟件 &lt;/a&gt;</string>
+
+    <string name="contact">聯繫人</string>
+    <string name="btn_load">載入簡訊</string>
+    <string name="from">來自</string>
+    <string name="to">發送</string>
+    <string name="body">內容</string>
+    <string name="date">日期</string>
+    <string name="save">保存</string>
+
+    <string name="num_hint">電話號碼</string>
+    <string name="choose">選取號碼</string>
+
+    <string name="help">幫助</string>
+    <string name="about">關於</string>
+
+    <string name="btn_save">保存</string>
+    <string name="save_msg">保存成功</string>
+    <string name="loading">載入中..</string>
+    <string name="loading_empty">沒有此號碼對應的信息</string>
+    <string name="edit_message_diag_title">修改信息</string>
+
+    <string name="diag_set_default_sms">警告</string>
+    <string name="msg_set_default_sms">由於最新版Android系統對簡訊類應用作了更嚴格的限制，您需要臨時設置本程式為默認簡訊編輯應用，更改簡訊完畢後再恢復原來默認程式，點擊確定繼續</string>
+    <string name="msg_revert_default_sms">此操作幫您恢復原來系統默認簡訊應用，點擊確定繼續</string>
+    <string name="no_show_again">不再提示</string>
+    <string name="ok">ok</string>
+</resources>

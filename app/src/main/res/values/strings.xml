@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SMS Editor</string>
+    <string name="help_msg">» Type a contact number or choose one from contact list&lt;br&gt;&lt;br&gt;» Click \&apos;Load Message\&apos; button to load messages from/to this number&lt;br&gt;&lt;br&gt;» Click on a single message to edit</string>
+    <string name="help_msg_">Go to your conversation, then tap on a single message to edit, and then save. </string>
+    <string name="about_msg" formatted="false">&lt;br&gt;© 2015 Ray Y &lt;br&gt;&lt;br&gt;&lt;a
+		href="market://details?id=com.rayy.android.editad"&gt;Rate It&lt;/a&gt; | &lt;a href="market://details?id=com.rayy.android.smseditor"&gt;Remove Ad? &lt;/a&gt;</string>
+
+    <string name="contact">Contact</string>
+    <string name="btn_load">Load Message</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="body">Body</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+
+    <string name="num_hint">Phone Number</string>
+    <string name="choose">Choose Number</string>
+
+    <string name="help">Help</string>
+    <string name="about">About</string>
+
+    <string name="btn_save">Save</string>
+    <string name="save_msg">Message updated successfully</string>
+    <string name="loading">Loading messages...</string>
+    <string name="loading_empty">No messages for this contact number</string>
+    <string name="edit_message_diag_title">Edit Message</string>
+
+    <string name="diag_set_default_sms">Warning</string>
+    <string name="msg_set_default_sms">In order for SMS Editor to work on latest Android version, you need to set it as default SMS app; this is temporary and after editing done it will revert to previous default SMS app, click "Ok" to proceed</string>
+    <string name="msg_revert_default_sms">Click "Ok" to revert to your previous default Message App</string>
+    <string name="no_show_again">Don\'t show again</string>
+    <string name="title_activity_thread_detail">Conversation</string>
+    <string name="gopro">Go PRO</string>
+    <string name="ok">ok</string>
+</resources>
