@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ducdung.sms_edit">
+
     <uses-permission android:name="android.permission.WRITE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -9,6 +10,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:theme="@style/MyMaterial"
         android:label="@string/app_name"
@@ -32,7 +34,8 @@
             </intent-filter>
         </receiver>
 
-        <activity android:label="@string/app_name"
+        <activity
+            android:label="@string/app_name"
             android:name="com.example.ducdung.sms_edit.activity.ThreadActivity"
             android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
@@ -45,8 +48,10 @@
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <action android:name="android.intent.action.SENDTO" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="sms" />
                 <data android:scheme="smsto" />
                 <data android:scheme="mms" />
@@ -61,6 +66,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:scheme="sms" />
                 <data android:scheme="smsto" />
                 <data android:scheme="mms" />
@@ -68,12 +74,10 @@
             </intent-filter>
         </service>
 
-        <activity android:label="@string/title_activity_thread_detail"
+        <activity
+            android:label="@string/title_activity_thread_detail"
             android:name=".activity.ThreadDetailActivity"
             android:parentActivityName="com.example.ducdung.sms_edit.activity.ThreadActivity" />
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="0839fc7c22d3b233b638176175b91c2ec762d108" />
 
     </application>
 </manifest>

@@ -11,10 +11,10 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
-import android.support.v4.app.ActivityCompat;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
+import androidx.core.app.ActivityCompat;
 
 public class TelephoneUtil {
     private static final Uri uri = Uri.parse("content://sms");

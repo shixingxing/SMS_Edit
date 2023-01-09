@@ -6,14 +6,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-
+import androidx.appcompat.app.AppCompatActivity;
 import com.example.ducdung.sms_edit.R;
 import com.example.ducdung.sms_edit.adapter.SmsItemAdapter;
 import com.example.ducdung.sms_edit.constant.CommonConstant;
@@ -89,6 +87,7 @@ public class ThreadDetailActivity extends AppCompatActivity {
             this.smsItemAdapter.notifyDataSetChanged();
             this.threadDetailList.setSelection(this.messages.size() - 1);
             hideLoading();
+            return;
         }
         cursor.moveToFirst();
         this.messages.clear();

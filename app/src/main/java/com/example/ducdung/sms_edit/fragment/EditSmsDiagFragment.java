@@ -11,7 +11,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.UiThread;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -19,7 +18,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import androidx.annotation.UiThread;
 import com.example.ducdung.sms_edit.GlobalState;
 import com.example.ducdung.sms_edit.R;
 import com.example.ducdung.sms_edit.activity.ThreadDetailActivity;

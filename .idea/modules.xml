@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SMS_Edit.iml" filepath="$PROJECT_DIR$/SMS_Edit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SMS_Edit.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SMS_Edit.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SMS_Edit.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SMS_Edit.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SMS_Edit.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SMS_Edit.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SMS_Edit.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SMS_Edit.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/work.SMS_Edit.iml" filepath="$PROJECT_DIR$/.idea/modules/work.SMS_Edit.iml" />
     </modules>
   </component>
 </project>

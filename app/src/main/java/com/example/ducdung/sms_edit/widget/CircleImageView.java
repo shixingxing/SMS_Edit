@@ -15,14 +15,12 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.util.AttributeSet;
-import android.widget.ImageView;
-import android.widget.ImageView.ScaleType;
 
 
 /*
-* custom Circle ImageView
-* */
-public class CircleImageView extends android.support.v7.widget.AppCompatImageView {
+ * custom Circle ImageView
+ * */
+public class CircleImageView extends androidx.appcompat.widget.AppCompatImageView {
     private static final Config BITMAP_CONFIG = Config.ARGB_8888;
     private static final int COLORDRAWABLE_DIMENSION = 1;
     private static final int DEFAULT_BORDER_COLOR = -16777216;

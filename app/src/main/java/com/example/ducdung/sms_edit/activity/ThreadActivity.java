@@ -17,7 +17,6 @@ import android.os.Looper;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.provider.Telephony;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,8 +28,9 @@ import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
+import androidx.appcompat.app.AppCompatActivity;
 import com.example.ducdung.sms_edit.GlobalState;
+import com.example.ducdung.sms_edit.R;
 import com.example.ducdung.sms_edit.adapter.ThreadItemAdapter;
 import com.example.ducdung.sms_edit.constant.CommonConstant;
 import com.example.ducdung.sms_edit.constant.UriConstant;
@@ -39,8 +39,6 @@ import com.example.ducdung.sms_edit.util.ActivityHelper;
 import com.example.ducdung.sms_edit.util.CursorInspector;
 import com.example.ducdung.sms_edit.util.DialogBuilder;
 import com.example.ducdung.sms_edit.util.TelephoneUtil;
-
-import com.example.ducdung.sms_edit.R;
 
 import java.util.ArrayList;
 import java.util.List;

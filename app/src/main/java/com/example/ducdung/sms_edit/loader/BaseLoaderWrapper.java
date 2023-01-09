@@ -3,7 +3,7 @@ package com.example.ducdung.sms_edit.loader;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
-import android.support.v4.content.CursorLoader;
+import androidx.loader.content.CursorLoader;
 
 public class BaseLoaderWrapper extends CursorLoader {
     private Context context;
