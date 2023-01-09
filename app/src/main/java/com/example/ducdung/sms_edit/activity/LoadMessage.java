@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.app.LoaderManager;
 import android.app.ProgressDialog;
+import android.app.role.RoleManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.CursorLoader;
@@ -568,13 +569,20 @@ public class LoadMessage extends AppCompatActivity implements LoaderManager.Load
     /*
     * premision android 4.4
     * */
-    @TargetApi(Build.VERSION_CODES.KITKAT)
     private void startChangeSmsDiagActivity(String packageToChange) {
         Log.i(TAG, "change to " + packageToChange);
-        Intent intent = new Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT);
-        intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, packageToChange);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 
-        startActivity(intent);
+            RoleManager roleManager = (RoleManager) getSystemService(Context.ROLE_SERVICE);
+            Intent intent = roleManager.createRequestRoleIntent(RoleManager.ROLE_SMS);
+            startActivityForResult(intent, 666);
+
+        } else {
+            Intent intent = new Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT);
+            intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, packageToChange);
+
+            startActivity(intent);
+        }
     }
 
     @Override

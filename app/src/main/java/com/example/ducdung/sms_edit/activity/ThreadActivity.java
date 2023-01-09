@@ -3,7 +3,9 @@ package com.example.ducdung.sms_edit.activity;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
+import android.app.role.RoleManager;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -231,14 +233,22 @@ public class ThreadActivity extends AppCompatActivity {
         }
     }
 
-    @TargetApi(Build.VERSION_CODES.KITKAT)
     private void startChangeSmsDiagActivity(String packageToChange) {
         Log.i(tag, "change to " + packageToChange);
 
-        Intent intent = new Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT);
-        intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, packageToChange);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
 
-        startActivity(intent);
+            RoleManager roleManager = (RoleManager) getSystemService(Context.ROLE_SERVICE);
+            Intent intent = roleManager.createRequestRoleIntent(RoleManager.ROLE_SMS);
+            startActivityForResult(intent, 666);
+
+        } else {
+            Intent intent = new Intent(Telephony.Sms.Intents.ACTION_CHANGE_DEFAULT);
+            intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, packageToChange);
+
+            startActivity(intent);
+        }
+
     }
 
     @TargetApi(Build.VERSION_CODES.KITKAT)

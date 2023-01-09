@@ -5,19 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 
-/**
- * helper class wrapped with common activity operations
- *
- * @Author yangw
- * @Date 18/7/15 11:01 AM.
- */
-import android.annotation.TargetApi;
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.util.Log;
-
 public class ActivityHelper {
     private static final String tag = ActivityHelper.class.getSimpleName();
 
@@ -58,13 +45,4 @@ public class ActivityHelper {
         }.start();
     }
 
-    @TargetApi(19)
-    public static void startChangeSmsDiagActivity(Activity activity, String packageToChange) {
-        Log.i(tag, "change to " + packageToChange);
-        Intent intent = new Intent("android.provider.Telephony.ACTION_CHANGE_DEFAULT");
-        intent.putExtra("package", packageToChange);
-        if (activity != null) {
-            activity.startActivity(intent);
-        }
-    }
 }
