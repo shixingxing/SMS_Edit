@@ -1,20 +1,33 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
+    compileSdk 33
     defaultConfig {
         applicationId "com.example.ducdung.sms_edit"
-        minSdkVersion 19
-        targetSdkVersion 30
+        minSdk 19
+        targetSdk 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+        }
         release {
-            minifyEnabled false
+            signingConfig signingConfigs.release
+            debuggable false
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
     }
 }
 
