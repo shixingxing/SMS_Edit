@@ -2,7 +2,6 @@
 package com.example.ducdung.sms_edit.activity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.ContentValues;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,17 +12,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 import com.example.ducdung.sms_edit.R;
 import com.example.ducdung.sms_edit.constant.CommonConstant;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
-* dev : Dung Pham
-* actvity edit message
-* */
-public class EditMessage extends Activity {
+ * dev : Dung Pham
+ * actvity edit message
+ * */
+public class EditMessage extends AppCompatActivity {
 
     private EditText sender, body, date;
     private Button save;

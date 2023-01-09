@@ -1,9 +1,7 @@
 package com.example.ducdung.sms_edit.activity;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.FragmentManager;
 import android.app.LoaderManager;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
@@ -43,10 +41,10 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import com.example.ducdung.sms_edit.R;
 import com.example.ducdung.sms_edit.fragment.EditSmsDiagFragment;
-
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -56,7 +54,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class LoadMessage extends Activity implements LoaderManager.LoaderCallbacks<Cursor> {
+public class LoadMessage extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
     private static final String TAG = LoadMessage.class.getSimpleName();
     private final int PICK_CONTACT = 0, PICK_MESSAGE = 1, LOAD_MESSAGE = 2;
     ImageButton pick_c;
@@ -185,7 +183,7 @@ public class LoadMessage extends Activity implements LoaderManager.LoaderCallbac
     * */
     protected void showEditSmsDialog(Bundle bundle) {
         //FragmentTransaction ft = getFragmentManager().beginTransaction();
-        FragmentManager fm = getFragmentManager();
+        FragmentManager fm = getSupportFragmentManager();
         EditSmsDiagFragment editDiag = new EditSmsDiagFragment();
         editDiag.setArguments(bundle);
         editDiag.setRetainInstance(true);

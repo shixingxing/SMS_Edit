@@ -1,13 +1,9 @@
 package com.example.ducdung.sms_edit.fragment;
 
-import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.Fragment;
 import android.content.ContentValues;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -19,6 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.UiThread;
+import androidx.fragment.app.DialogFragment;
 import com.example.ducdung.sms_edit.GlobalState;
 import com.example.ducdung.sms_edit.R;
 import com.example.ducdung.sms_edit.activity.ThreadDetailActivity;
@@ -31,12 +28,10 @@ import java.util.concurrent.Executors;
 import static com.example.ducdung.sms_edit.constant.UriConstant.SMS_URI;
 
 
-@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class EditSmsDiagFragment extends DialogFragment {
     private static final String TAG = EditSmsDiagFragment.class.getSimpleName();
     ProgressBar pgBar;
     Uri uri = Uri.parse(SMS_URI);
-    private Fragment mFragment;
     private EditText sender, body, date;
     private TextView type;
     private Button save;

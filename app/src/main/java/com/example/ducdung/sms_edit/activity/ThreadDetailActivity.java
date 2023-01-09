@@ -1,6 +1,5 @@
 package com.example.ducdung.sms_edit.activity;
 
-import android.app.FragmentManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import com.example.ducdung.sms_edit.R;
 import com.example.ducdung.sms_edit.adapter.SmsItemAdapter;
 import com.example.ducdung.sms_edit.constant.CommonConstant;
@@ -107,7 +107,7 @@ public class ThreadDetailActivity extends AppCompatActivity {
     }
 
     protected void showEditSmsDialog(Bundle bundle) {
-        FragmentManager fm = getFragmentManager();
+        FragmentManager fm = getSupportFragmentManager();
 
         editDiag = new EditSmsDiagFragment();
         editDiag.setArguments(bundle);
